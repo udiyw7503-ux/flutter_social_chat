@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/animated_gradient_button.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/sign_in/widgets/sign_in_view_input_field.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/animated_gradient_button.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/sign_in/widgets/sign_in_view_input_field.dart';
 
 /// Card component that contains the phone number input form
 class SignInViewInputCard extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/keyboard_dismiss_wrapper.dart';
-import 'package:flutter_social_chat/presentation/gen/assets.gen.dart';
-import 'package:flutter_social_chat/presentation/views/sign_in/widgets/sign_in_view_input_card.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/keyboard_dismiss_wrapper.dart';
+import 'package:billie/presentation/gen/assets.gen.dart';
+import 'package:billie/presentation/views/sign_in/widgets/sign_in_view_input_card.dart';
 import 'package:lottie/lottie.dart';
 
 /// The main content of the sign-in view

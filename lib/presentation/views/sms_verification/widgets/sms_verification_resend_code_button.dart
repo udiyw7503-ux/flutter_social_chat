@@ -4,10 +4,10 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Button that allows users to request a new SMS code
 class SmsVerificationResendCodeButton extends StatefulWidget {
@@ -73,7 +73,7 @@ class _SmsVerificationResendCodeButtonState extends State<SmsVerificationResendC
                   const SizedBox(width: 8),
                   CustomText(
                     text: resendCodeText,
-                    color: white.withValues(alpha: isDisabled ? 0.5 : 1.0),
+                    color: white.withOpacity(isDisabled ? 0.5 : 1.0),
                     fontSize: 14,
                   ),
                 ],

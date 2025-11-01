@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/core/constants/enums/button_size_enum.dart';
-import 'package:flutter_social_chat/core/constants/enums/button_type_enum.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/core/constants/enums/button_size_enum.dart';
+import 'package:billie/core/constants/enums/button_type_enum.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -98,7 +98,6 @@ class CustomButton extends StatelessWidget {
           )
         : (icon != null)
             ? Row(
-                spacing: 8,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   icon!,

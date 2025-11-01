@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// A customized app bar that provides consistent styling across the app
 ///
@@ -126,7 +126,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   bool _isLightColor(Color color) {
     // Calculate the brightness using the formula:
     // (0.299 * R) + (0.587 * G) + (0.114 * B)
-    final brightness = (0.299 * color.r + 0.587 * color.g + 0.114 * color.b) / 255;
+    final brightness = (0.299 * color.red + 0.587 * color.green + 0.114 * color.blue) / 255;
     return brightness > 0.5;
   }
 }

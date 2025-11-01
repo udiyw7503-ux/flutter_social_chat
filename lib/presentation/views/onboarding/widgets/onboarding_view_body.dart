@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/onboarding/widgets/onboarding_view_animated_tips.dart';
-import 'package:flutter_social_chat/presentation/views/onboarding/widgets/onboarding_view_animation.dart';
-import 'package:flutter_social_chat/presentation/views/onboarding/widgets/onboarding_view_profile_image.dart';
-import 'package:flutter_social_chat/presentation/views/onboarding/widgets/onboarding_view_submit_button.dart';
-import 'package:flutter_social_chat/presentation/views/onboarding/widgets/onboarding_view_username_form_field.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/onboarding/widgets/onboarding_view_animated_tips.dart';
+import 'package:billie/presentation/views/onboarding/widgets/onboarding_view_animation.dart';
+import 'package:billie/presentation/views/onboarding/widgets/onboarding_view_profile_image.dart';
+import 'package:billie/presentation/views/onboarding/widgets/onboarding_view_submit_button.dart';
+import 'package:billie/presentation/views/onboarding/widgets/onboarding_view_username_form_field.dart';
 
 /// Main content container for the onboarding page
 ///
@@ -29,8 +29,8 @@ class OnboardingViewBody extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            customIndigoColor.withValues(alpha: 0.15),
-            customIndigoColor.withValues(alpha: 0.03),
+            customIndigoColor.withOpacity(0.15),
+            customIndigoColor.withOpacity(0.03),
             white,
           ],
           stops: const [0.0, 0.25, 0.5],
@@ -55,7 +55,7 @@ class OnboardingViewBody extends StatelessWidget {
         color: white,
         borderRadius: const BorderRadius.only(topLeft: Radius.circular(28), topRight: Radius.circular(28)),
         boxShadow: [
-          BoxShadow(color: customIndigoColor.withValues(alpha: 0.08), blurRadius: 15, offset: const Offset(0, -5)),
+          BoxShadow(color: customIndigoColor.withOpacity(0.08), blurRadius: 15, offset: const Offset(0, -5)),
         ],
       ),
       child: Column(

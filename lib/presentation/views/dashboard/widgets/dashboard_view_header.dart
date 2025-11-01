@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/dashboard/widgets/dashboard_view_messages_card.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/dashboard/widgets/dashboard_view_messages_card.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
@@ -18,13 +18,12 @@ class DashboardViewHeader extends StatelessWidget {
       decoration: BoxDecoration(
         color: white,
         boxShadow: [
-          BoxShadow(color: customGreyColor300.withValues(alpha: 0.2), blurRadius: 4, offset: const Offset(0, 2)),
+          BoxShadow(color: customGreyColor300.withOpacity(0.2), blurRadius: 4, offset: const Offset(0, 2)),
         ],
       ),
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,11 +31,10 @@ class DashboardViewHeader extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
-                      color: customIndigoColor.withValues(alpha: 0.2),
+                      color: customIndigoColor.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Row(
-                      spacing: 8,
                       children: [
                         const SizedBox(
                           width: 8,
@@ -75,7 +73,7 @@ class DashboardViewHeader extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: customGreyColor400.withValues(alpha: 0.3),
+                        color: customGreyColor400.withOpacity(0.3),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),

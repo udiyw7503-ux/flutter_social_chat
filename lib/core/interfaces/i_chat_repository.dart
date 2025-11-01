@@ -1,5 +1,5 @@
-import 'package:flutter_social_chat/core/constants/enums/chat_failure_enum.dart';
-import 'package:flutter_social_chat/domain/models/chat/chat_user_model.dart';
+import 'package:billie/core/constants/enums/chat_failure_enum.dart';
+import 'package:billie/domain/models/chat/chat_user_model.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart' hide Unit;
 

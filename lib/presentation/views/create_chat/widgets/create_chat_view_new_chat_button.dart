@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CreateChatViewNewChatButton extends StatefulWidget {
@@ -131,18 +131,18 @@ class _CreateChatViewNewChatButtonState extends State<CreateChatViewNewChatButto
                       gradient: LinearGradient(
                         colors: state.isInProgress
                             ? [
-                                customIndigoColor.withValues(alpha: 0.7),
-                                customIndigoColor.withValues(alpha: 0.6),
+                                customIndigoColor.withOpacity(0.7),
+                                customIndigoColor.withOpacity(0.6),
                               ]
                             : shouldEnableButton
                                 ? (_isPressed
                                     ? [
-                                        customIndigoColor.withValues(alpha: 0.8),
+                                        customIndigoColor.withOpacity(0.8),
                                         customIndigoColor,
                                       ]
                                     : [
                                         customIndigoColor,
-                                        customIndigoColor.withValues(alpha: 0.8),
+                                        customIndigoColor.withOpacity(0.8),
                                       ])
                                 : [
                                     customGreyColor400,
@@ -152,7 +152,7 @@ class _CreateChatViewNewChatButtonState extends State<CreateChatViewNewChatButto
                       boxShadow: shouldEnableButton && !state.isInProgress
                           ? [
                               BoxShadow(
-                                color: customIndigoColor.withValues(alpha: 0.3),
+                                color: customIndigoColor.withOpacity(0.3),
                                 blurRadius: 8,
                                 offset: const Offset(0, 4),
                               ),

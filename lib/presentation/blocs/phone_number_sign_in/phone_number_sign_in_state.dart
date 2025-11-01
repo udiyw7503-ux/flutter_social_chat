@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_social_chat/core/constants/enums/auth_failure_enum.dart';
+import 'package:billie/core/constants/enums/auth_failure_enum.dart';
 import 'package:fpdart/fpdart.dart';
 
 class PhoneNumberSignInState extends Equatable {

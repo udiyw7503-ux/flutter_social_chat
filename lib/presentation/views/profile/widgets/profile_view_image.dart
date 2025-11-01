@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
 
 /// Displays the user's profile image with proper caching and loading states
 ///
@@ -27,7 +27,7 @@ class ProfileViewImage extends StatelessWidget {
         shape: BoxShape.circle,
         border: Border.all(color: white, width: 3),
         boxShadow: [
-          BoxShadow(color: black.withValues(alpha: 0.2), blurRadius: 8, offset: const Offset(0, 3)),
+          BoxShadow(color: black.withOpacity(0.2), blurRadius: 8, offset: const Offset(0, 3)),
         ],
       ),
       child: ClipRRect(

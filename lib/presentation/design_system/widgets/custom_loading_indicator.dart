@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/colors.dart';
 
 /// A customizable loading indicator that shows a semi-transparent overlay with a circular progress indicator.
 ///

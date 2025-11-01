@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/gen/assets.gen.dart';
-import 'package:flutter_social_chat/presentation/views/sms_verification/widgets/sms_verification_confirmation_info_text_with_icon.dart';
-import 'package:flutter_social_chat/presentation/views/sms_verification/widgets/sms_verification_confirmation_text_with_icon.dart';
-import 'package:flutter_social_chat/presentation/views/sms_verification/widgets/sms_verification_resend_code_button.dart';
-import 'package:flutter_social_chat/presentation/views/sms_verification/widgets/sms_verification_pin_field.dart';
-import 'package:flutter_social_chat/presentation/views/sms_verification/widgets/sms_verification_button.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/gen/assets.gen.dart';
+import 'package:billie/presentation/views/sms_verification/widgets/sms_verification_confirmation_info_text_with_icon.dart';
+import 'package:billie/presentation/views/sms_verification/widgets/sms_verification_confirmation_text_with_icon.dart';
+import 'package:billie/presentation/views/sms_verification/widgets/sms_verification_resend_code_button.dart';
+import 'package:billie/presentation/views/sms_verification/widgets/sms_verification_pin_field.dart';
+import 'package:billie/presentation/views/sms_verification/widgets/sms_verification_button.dart';
 import 'package:lottie/lottie.dart';
 
 /// Main content container for the SMS verification view

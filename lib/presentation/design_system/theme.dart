@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/colors.dart';
 
 /// Main theme configuration for the application
 ///
@@ -127,10 +127,10 @@ class AppTheme {
         overlayColor: WidgetStateProperty.resolveWith<Color?>(
           (Set<WidgetState> states) {
             if (states.contains(WidgetState.hovered)) {
-              return customIndigoColor.withValues(alpha: 0.04);
+              return customIndigoColor.withOpacity(0.04);
             }
             if (states.contains(WidgetState.focused) || states.contains(WidgetState.pressed)) {
-              return customIndigoColor.withValues(alpha: 0.12);
+              return customIndigoColor.withOpacity(0.12);
             }
             return null;
           },

@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Animated tips container that cycles through helpful onboarding tips
 ///
@@ -85,10 +85,10 @@ class _OnboardingViewAnimatedTipsState extends State<OnboardingViewAnimatedTips>
       margin: const EdgeInsets.symmetric(horizontal: 12),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
-        color: customIndigoColor.withValues(alpha: 0.08),
+        color: customIndigoColor.withOpacity(0.08),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: customIndigoColor.withValues(alpha: 0.15),
+          color: customIndigoColor.withOpacity(0.15),
           width: 1.5,
         ),
       ),
@@ -107,7 +107,6 @@ class _OnboardingViewAnimatedTipsState extends State<OnboardingViewAnimatedTips>
     final appLocalizations = AppLocalizations.of(context);
 
     return Row(
-      spacing: 8,
       children: [
         const Icon(Icons.tips_and_updates_outlined, color: customIndigoColor, size: 24),
         CustomText(

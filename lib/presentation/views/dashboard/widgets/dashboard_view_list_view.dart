@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/views/dashboard/widgets/dashboard_view_error_widget.dart';
-import 'package:flutter_social_chat/presentation/views/dashboard/widgets/dashboard_view_loading_widget.dart';
-import 'package:flutter_social_chat/presentation/views/dashboard/widgets/dashboard_view_list_item_builder.dart';
+import 'package:billie/presentation/views/dashboard/widgets/dashboard_view_error_widget.dart';
+import 'package:billie/presentation/views/dashboard/widgets/dashboard_view_loading_widget.dart';
+import 'package:billie/presentation/views/dashboard/widgets/dashboard_view_list_item_builder.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// A widget for displaying a list of channels with search functionality

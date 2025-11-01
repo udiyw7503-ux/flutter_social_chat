@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -59,13 +59,13 @@ class CreateChatViewUserListView extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.people_outline, size: 48, color: customIndigoColor.withValues(alpha: 0.5)),
+          Icon(Icons.people_outline, size: 48, color: customIndigoColor.withOpacity(0.5)),
           const SizedBox(height: 16),
           CustomText(
             text: appLocalizations?.noUsersFound ?? '',
             fontSize: 16,
             fontWeight: FontWeight.w500,
-            color: customIndigoColor.withValues(alpha: 0.7),
+            color: customIndigoColor.withOpacity(0.7),
           ),
         ],
       ),
@@ -79,7 +79,7 @@ class CreateChatViewUserListView extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.error_outline, size: 48, color: errorColor.withValues(alpha: 0.7)),
+          Icon(Icons.error_outline, size: 48, color: errorColor.withOpacity(0.7)),
           const SizedBox(height: 16),
           CustomText(
             text: appLocalizations?.failedToLoadUsers ?? '',
@@ -116,7 +116,7 @@ class CreateChatViewUserListView extends StatelessWidget {
             duration: const Duration(milliseconds: 200),
             curve: Curves.easeInOut,
             decoration: BoxDecoration(
-              color: isSelected ? customIndigoColor.withValues(alpha: 0.05) : transparent,
+              color: isSelected ? customIndigoColor.withOpacity(0.05) : transparent,
               border: const Border(bottom: BorderSide(color: customGreyColor200, width: 0.5)),
             ),
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),

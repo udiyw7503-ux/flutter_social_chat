@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:hydrated_bloc/hydrated_bloc.dart';
-import 'package:flutter_social_chat/core/interfaces/i_auth_repository.dart';
-import 'package:flutter_social_chat/core/interfaces/i_chat_repository.dart';
-import 'package:flutter_social_chat/domain/models/auth/auth_user_model.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_state.dart';
-import 'package:flutter_social_chat/core/di/dependency_injector.dart';
+import 'package:billie/core/interfaces/i_auth_repository.dart';
+import 'package:billie/core/interfaces/i_chat_repository.dart';
+import 'package:billie/domain/models/auth/auth_user_model.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_state.dart';
+import 'package:billie/core/di/dependency_injector.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// Manages the authentication session state of the application

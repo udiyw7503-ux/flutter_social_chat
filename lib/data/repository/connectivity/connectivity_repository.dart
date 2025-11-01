@@ -1,6 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_social_chat/core/interfaces/i_connectivity_repository.dart';
+import 'package:billie/core/interfaces/i_connectivity_repository.dart';
 
 /// Implementation of the connectivity repository using the connectivity_plus package.
 /// 

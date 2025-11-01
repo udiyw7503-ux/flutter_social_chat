@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/views/profile/widgets/profile_view_activity_status_widget.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/views/profile/widgets/profile_view_activity_status_widget.dart';
 
 /// Card displaying user account status information
 ///
@@ -26,11 +26,10 @@ class ProfileViewStatusCard extends StatelessWidget {
         color: white,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(color: black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, 5)),
+          BoxShadow(color: black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 5)),
         ],
       ),
       child: Row(
-        spacing: 16,
         children: [
           ProfileViewActivityStatusWidget(
             title: localization?.accountActivity ?? '',

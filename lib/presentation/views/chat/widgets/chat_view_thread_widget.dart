@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/colors.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// Thread page shown when a thread is opened
@@ -17,10 +17,7 @@ class ChatViewThreadWidget extends StatelessWidget {
           Expanded(
             child: StreamMessageListView(parentMessage: parent),
           ),
-          const StreamMessageInput(
-            activeSendIcon: Icon(Icons.send, size: 30, color: customIndigoColor),
-            idleSendIcon: Icon(Icons.send, size: 30, color: customGreyColor600),
-          ),
+          const StreamMessageInput(),
         ],
       ),
     );

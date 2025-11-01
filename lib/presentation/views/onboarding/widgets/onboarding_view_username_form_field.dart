@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/profile_management/profile_manager_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/profile_management/profile_manager_state.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/styles/input_styles.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/profile_management/profile_manager_cubit.dart';
+import 'package:billie/presentation/blocs/profile_management/profile_manager_state.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/styles/input_styles.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Form field for username input with validation
 ///

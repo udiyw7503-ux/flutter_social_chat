@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/create_chat/widgets/create_chat_view_new_chat_button.dart';
-import 'package:flutter_social_chat/presentation/views/create_chat/widgets/create_chat_view_creating_group_chat_page_details.dart';
-import 'package:flutter_social_chat/presentation/views/create_chat/widgets/create_chat_view_user_list_view.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/create_chat/widgets/create_chat_view_new_chat_button.dart';
+import 'package:billie/presentation/views/create_chat/widgets/create_chat_view_creating_group_chat_page_details.dart';
+import 'package:billie/presentation/views/create_chat/widgets/create_chat_view_user_list_view.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// A stateless widget that displays the body content of the create chat view.
@@ -45,13 +45,13 @@ class CreateChatViewBody extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
                   decoration: BoxDecoration(
                     color: state.listOfSelectedUserIDs.isEmpty
-                        ? customIndigoColor.withValues(alpha: 0.05)
-                        : successColor.withValues(alpha: 0.05),
+                        ? customIndigoColor.withOpacity(0.05)
+                        : successColor.withOpacity(0.05),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
                       color: state.listOfSelectedUserIDs.isEmpty
-                          ? customIndigoColor.withValues(alpha: 0.1)
-                          : successColor.withValues(alpha: 0.2),
+                          ? customIndigoColor.withOpacity(0.1)
+                          : successColor.withOpacity(0.2),
                     ),
                   ),
                   child: Row(

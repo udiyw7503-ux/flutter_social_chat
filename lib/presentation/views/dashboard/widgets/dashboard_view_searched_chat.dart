@@ -2,11 +2,11 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 import 'package:intl/intl.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
@@ -96,8 +96,8 @@ class DashboardViewSearchedChat extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
-        splashColor: customIndigoColor.withValues(alpha: 0.1),
-        highlightColor: customIndigoColor.withValues(alpha: 0.05),
+        splashColor: customIndigoColor.withOpacity(0.1),
+        highlightColor: customIndigoColor.withOpacity(0.05),
         onTap: () => defaultWidget.onTap?.call(),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
@@ -119,7 +119,7 @@ class DashboardViewSearchedChat extends StatelessWidget {
                           border: Border.all(color: white, width: 2),
                           boxShadow: [
                             BoxShadow(
-                              color: customGreyColor600.withValues(alpha: 0.3),
+                              color: customGreyColor600.withOpacity(0.3),
                               blurRadius: 4,
                               offset: const Offset(0, 1),
                             ),
@@ -133,10 +133,8 @@ class DashboardViewSearchedChat extends StatelessWidget {
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  spacing: 4,
                   children: [
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Expanded(
                           child: CustomText(
@@ -206,7 +204,7 @@ class DashboardViewSearchedChat extends StatelessWidget {
                               borderRadius: BorderRadius.circular(12),
                               boxShadow: [
                                 BoxShadow(
-                                  color: customIndigoColor.withValues(alpha: 0.3),
+                                  color: customIndigoColor.withOpacity(0.3),
                                   blurRadius: 4,
                                   offset: const Offset(0, 2),
                                 ),
@@ -270,8 +268,8 @@ class DashboardViewSearchedChat extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            customIndigoColor.withValues(alpha: 0.2),
-            customIndigoColorSecondary.withValues(alpha: 0.3),
+            customIndigoColor.withOpacity(0.2),
+            customIndigoColorSecondary.withOpacity(0.3),
           ],
         ),
       ),
@@ -291,7 +289,7 @@ class DashboardViewSearchedChat extends StatelessWidget {
           shape: BoxShape.circle,
           image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
           boxShadow: [
-            BoxShadow(color: customGreyColor400.withValues(alpha: 0.4), blurRadius: 4, offset: const Offset(0, 2)),
+            BoxShadow(color: customGreyColor400.withOpacity(0.4), blurRadius: 4, offset: const Offset(0, 2)),
           ],
           border: Border.all(color: white, width: 2),
         ),

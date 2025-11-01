@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/popscope_scaffold.dart';
-import 'package:flutter_social_chat/presentation/views/landing/widgets/landing_background.dart';
-import 'package:flutter_social_chat/presentation/views/landing/widgets/landing_content.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_state.dart';
+import 'package:billie/presentation/design_system/widgets/popscope_scaffold.dart';
+import 'package:billie/presentation/views/landing/widgets/landing_background.dart';
+import 'package:billie/presentation/views/landing/widgets/landing_content.dart';
 import 'package:go_router/go_router.dart';
 import 'dart:async';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// A card displaying the user's messages information
 class DashboardViewMessagesCard extends StatelessWidget {
@@ -15,8 +15,8 @@ class DashboardViewMessagesCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            customIndigoColor.withValues(alpha: 0.08),
-            customIndigoColorSecondary.withValues(alpha: 0.05),
+            customIndigoColor.withOpacity(0.08),
+            customIndigoColorSecondary.withOpacity(0.05),
           ],
         ),
         borderRadius: BorderRadius.circular(12),
@@ -25,13 +25,12 @@ class DashboardViewMessagesCard extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(color: customIndigoColor.withValues(alpha: 0.1), shape: BoxShape.circle),
+            decoration: BoxDecoration(color: customIndigoColor.withOpacity(0.1), shape: BoxShape.circle),
             child: const Icon(Icons.forum_rounded, color: customIndigoColor, size: 20),
           ),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
-              spacing: 4,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomText(

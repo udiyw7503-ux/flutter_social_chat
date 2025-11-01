@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Component that displays the user's profile image
 ///
@@ -19,7 +19,6 @@ class OnboardingViewProfileImage extends StatelessWidget {
     final appLocalizations = AppLocalizations.of(context);
 
     return Column(
-      spacing: 12,
       mainAxisSize: MainAxisSize.min,
       children: [
         _buildProfileAvatar(),
@@ -43,7 +42,7 @@ class OnboardingViewProfileImage extends StatelessWidget {
           color: customGreyColor400,
           shape: BoxShape.circle,
           boxShadow: [
-            BoxShadow(color: black.withValues(alpha: 0.1), offset: const Offset(0, 4), blurRadius: 10),
+            BoxShadow(color: black.withOpacity(0.1), offset: const Offset(0, 4), blurRadius: 10),
           ],
           image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
         ),
@@ -55,7 +54,7 @@ class OnboardingViewProfileImage extends StatelessWidget {
           color: customGreyColor400,
           shape: BoxShape.circle,
           boxShadow: [
-            BoxShadow(color: black.withValues(alpha: 0.1), offset: const Offset(0, 4), blurRadius: 10),
+            BoxShadow(color: black.withOpacity(0.1), offset: const Offset(0, 4), blurRadius: 10),
           ],
         ),
         child: const CustomProgressIndicator(),
@@ -67,7 +66,7 @@ class OnboardingViewProfileImage extends StatelessWidget {
           color: customGreyColor400,
           shape: BoxShape.circle,
           boxShadow: [
-            BoxShadow(color: black.withValues(alpha: 0.1), offset: const Offset(0, 4), blurRadius: 10),
+            BoxShadow(color: black.withOpacity(0.1), offset: const Offset(0, 4), blurRadius: 10),
           ],
         ),
         child: const Icon(Icons.person_rounded, size: 60, color: white),

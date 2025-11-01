@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Button to confirm and submit the SMS verification code
 class SmsVerificationButton extends StatelessWidget {
@@ -20,12 +20,12 @@ class SmsVerificationButton extends StatelessWidget {
       width: double.infinity,
       height: 56,
       decoration: BoxDecoration(
-        color: isEnabled ? white : white.withValues(alpha: 0.6),
+        color: isEnabled ? white : white.withOpacity(0.6),
         borderRadius: BorderRadius.circular(12),
         boxShadow: isEnabled
             ? [
                 BoxShadow(
-                  color: white.withValues(alpha: 0.3),
+                  color: white.withOpacity(0.3),
                   blurRadius: 8,
                   offset: const Offset(0, 4),
                 ),
@@ -41,17 +41,16 @@ class SmsVerificationButton extends StatelessWidget {
             child: AnimatedDefaultTextStyle(
               duration: const Duration(milliseconds: 300),
               style: TextStyle(
-                color: isEnabled ? customIndigoColor : customIndigoColor.withValues(alpha: 0.5),
+                color: isEnabled ? customIndigoColor : customIndigoColor.withOpacity(0.5),
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
               ),
               child: Row(
-                spacing: 8,
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   CustomText(
                     text: verifyCodeText,
-                    color: isEnabled ? customIndigoColor : customIndigoColor.withValues(alpha: 0.5),
+                    color: isEnabled ? customIndigoColor : customIndigoColor.withOpacity(0.5),
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
@@ -60,7 +59,7 @@ class SmsVerificationButton extends StatelessWidget {
                     child: Icon(
                       Icons.arrow_forward_rounded,
                       size: 20,
-                      color: isEnabled ? customIndigoColor : customIndigoColor.withValues(alpha: 0.5),
+                      color: isEnabled ? customIndigoColor : customIndigoColor.withOpacity(0.5),
                     ),
                   ),
                 ],

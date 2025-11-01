@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 class ProfileViewActivityStatusWidget extends StatelessWidget {
   const ProfileViewActivityStatusWidget({
@@ -20,11 +20,10 @@ class ProfileViewActivityStatusWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Row(
-        spacing: 12,
         children: [
           Container(
             padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(color: color.withValues(alpha: 0.1), shape: BoxShape.circle),
+            decoration: BoxDecoration(color: color.withOpacity(0.1), shape: BoxShape.circle),
             child: Icon(icon, color: color, size: 18),
           ),
           Expanded(

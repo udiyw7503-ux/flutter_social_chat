@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_social_chat/domain/models/auth/auth_user_model.dart';
+import 'package:billie/domain/models/auth/auth_user_model.dart';
 
 /// Represents the state of the user's authentication session
 ///

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 /// Widget that displays a custom PIN field for SMS code entry
@@ -47,9 +47,9 @@ class SmsVerificationPinField extends StatelessWidget {
                 fieldHeight: 52,
                 fieldWidth: 42,
                 borderWidth: 0,
-                selectedFillColor: white.withValues(alpha: 0.3),
-                activeFillColor: white.withValues(alpha: 0.2),
-                inactiveFillColor: white.withValues(alpha: 0.15),
+                selectedFillColor: white.withOpacity(0.3),
+                activeFillColor: white.withOpacity(0.2),
+                inactiveFillColor: white.withOpacity(0.15),
                 selectedColor: transparent,
                 activeColor: transparent,
                 inactiveColor: transparent,

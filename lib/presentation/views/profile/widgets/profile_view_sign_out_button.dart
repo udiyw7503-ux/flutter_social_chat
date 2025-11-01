@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/core/di/dependency_injector.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_state.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_session/chat_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_loading_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/core/di/dependency_injector.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_state.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_session/chat_session_cubit.dart';
+import 'package:billie/presentation/blocs/phone_number_sign_in/phone_number_sign_in_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_loading_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
@@ -49,7 +49,7 @@ class _ProfileViewSignOutButtonState extends State<ProfileViewSignOutButton> {
             padding: const EdgeInsets.symmetric(vertical: 12),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
             elevation: 2,
-            shadowColor: black.withValues(alpha: 0.2),
+            shadowColor: black.withOpacity(0.2),
           ),
           child: _buildButtonContent(localization),
         ),
@@ -60,7 +60,6 @@ class _ProfileViewSignOutButtonState extends State<ProfileViewSignOutButton> {
   /// Builds the button content with icon and text
   Widget _buildButtonContent(AppLocalizations? localization) {
     return Row(
-      spacing: 8,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Icon(Icons.logout_rounded, color: white, size: 18),
@@ -151,7 +150,6 @@ class _ProfileViewSignOutButtonState extends State<ProfileViewSignOutButton> {
           actionsAlignment: MainAxisAlignment.center,
           actions: [
             Row(
-              spacing: 12,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Expanded(child: _buildCancelButton(dialogContext, localization)),

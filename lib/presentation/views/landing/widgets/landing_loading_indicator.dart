@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 /// Widget for displaying the bottom loading indicator
 class LandingLoadingIndicator extends StatelessWidget {
@@ -22,7 +22,6 @@ class LandingLoadingIndicator extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         decoration: BoxDecoration(color: customIndigoColor, borderRadius: BorderRadius.circular(20)),
         child: Row(
-          spacing: 12,
           mainAxisSize: MainAxisSize.min,
           children: [
             const CustomProgressIndicator(size: 20, strokeWidth: 2.5, progressIndicatorColor: white),

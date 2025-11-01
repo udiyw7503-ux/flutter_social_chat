@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 class ProfileViewDetails extends StatelessWidget {
   const ProfileViewDetails({
@@ -24,12 +24,11 @@ class ProfileViewDetails extends StatelessWidget {
         color: white,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(color: black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, 5)),
+          BoxShadow(color: black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 5)),
         ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 8,
         children: [
           CustomText(
             text: l10n?.accountDetails ?? '',
@@ -42,13 +41,12 @@ class ProfileViewDetails extends StatelessWidget {
             leading: Container(
               padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
-                color: customIndigoColorSecondary.withValues(alpha: 0.1),
+                color: customIndigoColorSecondary.withOpacity(0.1),
                 shape: BoxShape.circle,
               ),
               child: const Icon(Icons.calendar_today, color: customIndigoColorSecondary, size: 18),
             ),
             title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomText(
                   text: l10n?.createdAtText ?? '',
@@ -59,7 +57,7 @@ class ProfileViewDetails extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                   decoration: BoxDecoration(
-                    color: customIndigoColor.withValues(alpha: 0.1),
+                    color: customIndigoColor.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: CustomText(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/gen/assets.gen.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/gen/assets.gen.dart';
 import 'package:lottie/lottie.dart';
 
 /// Animated illustration shown at the top of the onboarding page
@@ -42,7 +42,7 @@ class _OnboardingViewAnimationState extends State<OnboardingViewAnimation> with 
               Container(
                 width: 150,
                 height: 150,
-                decoration: BoxDecoration(shape: BoxShape.circle, color: customIndigoColor.withValues(alpha: 0.1)),
+                decoration: BoxDecoration(shape: BoxShape.circle, color: customIndigoColor.withOpacity(0.1)),
               ),
               Lottie.asset(
                 Assets.animations.onboardingAnimation,

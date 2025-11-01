@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/views/dashboard/widgets/dashboard_view_searched_chat.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/views/dashboard/widgets/dashboard_view_searched_chat.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// A widget for building individual channel list items with search capabilities

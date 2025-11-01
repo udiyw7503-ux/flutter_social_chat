@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/create_chat/widgets/create_chat_view_group_name_form_field.dart';
-import 'package:flutter_social_chat/presentation/views/create_chat/widgets/create_chat_view_new_chat_button.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/create_chat/widgets/create_chat_view_group_name_form_field.dart';
+import 'package:billie/presentation/views/create_chat/widgets/create_chat_view_new_chat_button.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CreateChatViewCreatingGroupChatPageDetails extends StatelessWidget {
@@ -26,7 +26,7 @@ class CreateChatViewCreatingGroupChatPageDetails extends StatelessWidget {
           decoration: BoxDecoration(
             color: white,
             boxShadow: [
-              BoxShadow(color: black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, -2)),
+              BoxShadow(color: black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, -2)),
             ],
           ),
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
@@ -40,9 +40,9 @@ class CreateChatViewCreatingGroupChatPageDetails extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                     decoration: BoxDecoration(
-                      color: customIndigoColor.withValues(alpha: 0.05),
+                      color: customIndigoColor.withOpacity(0.05),
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: customIndigoColor.withValues(alpha: 0.1)),
+                      border: Border.all(color: customIndigoColor.withOpacity(0.1)),
                     ),
                     child: Row(
                       children: [
@@ -61,8 +61,8 @@ class CreateChatViewCreatingGroupChatPageDetails extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                           decoration: BoxDecoration(
                             color: state.listOfSelectedUserIDs.length >= 2
-                                ? successColor.withValues(alpha: 0.1)
-                                : customOrangeColor.withValues(alpha: 0.1),
+                                ? successColor.withOpacity(0.1)
+                                : customOrangeColor.withOpacity(0.1),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: CustomText(

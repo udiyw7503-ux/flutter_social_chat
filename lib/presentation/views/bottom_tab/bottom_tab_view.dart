@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_state.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_session/chat_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_session/chat_session_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/popscope_scaffold.dart';
-import 'package:flutter_social_chat/core/di/dependency_injector.dart';
-import 'package:flutter_social_chat/presentation/views/bottom_tab/widgets/bottom_navigation_builder.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_state.dart';
+import 'package:billie/presentation/blocs/chat_session/chat_session_cubit.dart';
+import 'package:billie/presentation/blocs/chat_session/chat_session_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/popscope_scaffold.dart';
+import 'package:billie/core/di/dependency_injector.dart';
+import 'package:billie/presentation/views/bottom_tab/widgets/bottom_navigation_builder.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 

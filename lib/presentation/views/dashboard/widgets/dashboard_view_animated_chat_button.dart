@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
@@ -183,7 +183,7 @@ class _DashboardViewAnimatedChatButtonState extends State<DashboardViewAnimatedC
                 Material(
                   color: transparent,
                   elevation: 4,
-                  shadowColor: color.withValues(alpha: 0.3),
+                  shadowColor: color.withOpacity(0.3),
                   shape: const CircleBorder(),
                   child: Container(
                     width: 48,
@@ -221,7 +221,7 @@ class _DashboardViewAnimatedChatButtonState extends State<DashboardViewAnimatedC
       child: Material(
         color: transparent,
         elevation: 6,
-        shadowColor: customIndigoColor.withValues(alpha: 0.3),
+        shadowColor: customIndigoColor.withOpacity(0.3),
         shape: const CircleBorder(),
         child: AnimatedBuilder(
           animation: _animationController,

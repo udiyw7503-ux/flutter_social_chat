@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_social_chat/core/di/dependency_injector.dart';
-import 'package:flutter_social_chat/core/interfaces/i_auth_repository.dart';
+import 'package:billie/core/di/dependency_injector.dart';
+import 'package:billie/core/interfaces/i_auth_repository.dart';
 import 'package:fpdart/fpdart.dart';
 
 extension DatabaseExtensions on FirebaseFirestore {

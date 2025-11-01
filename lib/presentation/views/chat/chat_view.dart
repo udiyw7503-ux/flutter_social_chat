@@ -2,12 +2,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
-import 'package:flutter_social_chat/presentation/blocs/auth_session/auth_session_cubit.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_progress_indicator.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/chat/widgets/chat_view_body.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/blocs/auth_session/auth_session_cubit.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_progress_indicator.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/chat/widgets/chat_view_body.dart';
 import 'package:go_router/go_router.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
@@ -115,7 +115,7 @@ class _ChatViewState extends State<ChatView> {
 
     final Widget defaultAvatar = CircleAvatar(
       radius: avatarSize / 2,
-      backgroundColor: customIndigoColor.withValues(alpha: 0.1),
+      backgroundColor: customIndigoColor.withOpacity(0.1),
       child: Icon(
         isOneToOneChat ? Icons.person : Icons.group,
         color: customIndigoColor,

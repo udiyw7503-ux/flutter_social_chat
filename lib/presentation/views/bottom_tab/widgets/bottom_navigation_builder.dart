@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/core/constants/enums/router_enum.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/core/constants/enums/router_enum.dart';
 import 'package:go_router/go_router.dart';
 
 /// Builds the bottom navigation bar for the main app UI
@@ -18,7 +18,7 @@ Widget bottomNavigationBuilder(BuildContext context) {
       color: white,
       boxShadow: [
         BoxShadow(
-          color: customGreyColor300.withValues(alpha: 0.5),
+          color: customGreyColor300.withOpacity(0.5),
           blurRadius: 10,
           offset: const Offset(0, -1),
         ),
@@ -97,7 +97,7 @@ Widget _buildNavItem({
       width: 56,
       height: 56,
       decoration: BoxDecoration(
-        color: isSelected ? customIndigoColor.withValues(alpha: 0.12) : transparent,
+        color: isSelected ? customIndigoColor.withOpacity(0.12) : transparent,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Center(

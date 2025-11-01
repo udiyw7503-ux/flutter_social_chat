@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
-import 'package:flutter_social_chat/presentation/views/profile/widgets/profile_view_image.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/views/profile/widgets/profile_view_image.dart';
 
 class ProfileViewHeader extends StatelessWidget {
   const ProfileViewHeader({

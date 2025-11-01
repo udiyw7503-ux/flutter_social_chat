@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_social_chat/core/constants/enums/auth_failure_enum.dart';
-import 'package:flutter_social_chat/domain/models/auth/auth_user_model.dart';
-import 'package:flutter_social_chat/core/interfaces/i_auth_repository.dart';
-import 'package:flutter_social_chat/data/extensions/auth/auth_user_extensions.dart';
+import 'package:billie/core/constants/enums/auth_failure_enum.dart';
+import 'package:billie/domain/models/auth/auth_user_model.dart';
+import 'package:billie/core/interfaces/i_auth_repository.dart';
+import 'package:billie/data/extensions/auth/auth_user_extensions.dart';
 import 'package:fpdart/fpdart.dart';
 
 class AuthRepository implements IAuthRepository {

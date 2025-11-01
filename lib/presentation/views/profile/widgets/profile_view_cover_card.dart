@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/gen/assets.gen.dart';
-import 'package:flutter_social_chat/presentation/views/profile/widgets/profile_view_header.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/gen/assets.gen.dart';
+import 'package:billie/presentation/views/profile/widgets/profile_view_header.dart';
 
 /// Card that displays the profile cover image with the user's header information
 ///
@@ -34,11 +34,11 @@ class ProfileViewCoverCard extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage(Assets.images.flutter.path),
           fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(black.withValues(alpha: 0.3), BlendMode.darken),
+          colorFilter: ColorFilter.mode(black.withOpacity(0.3), BlendMode.darken),
         ),
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
-          BoxShadow(color: black.withValues(alpha: 0.2), blurRadius: 12, offset: const Offset(0, 5)),
+          BoxShadow(color: black.withOpacity(0.2), blurRadius: 12, offset: const Offset(0, 5)),
         ],
       ),
       child: Stack(
@@ -51,7 +51,7 @@ class ProfileViewCoverCard extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [transparent, black.withValues(alpha: 0.7)],
+                colors: [transparent, black.withOpacity(0.7)],
                 stops: const [0.6, 1],
               ),
             ),

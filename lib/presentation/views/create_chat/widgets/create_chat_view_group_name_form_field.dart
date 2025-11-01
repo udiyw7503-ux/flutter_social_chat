@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_cubit.dart';
-import 'package:flutter_social_chat/presentation/blocs/chat_management/chat_management_state.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_cubit.dart';
+import 'package:billie/presentation/blocs/chat_management/chat_management_state.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 class CreateChatViewGroupNameFormField extends StatefulWidget {
   const CreateChatViewGroupNameFormField({super.key});
@@ -152,7 +152,7 @@ class _CreateChatViewGroupNameFormFieldState extends State<CreateChatViewGroupNa
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                       borderSide:
-                          BorderSide(color: _isValid ? customIndigoColor.withValues(alpha: 0.5) : customGreyColor300),
+                          BorderSide(color: _isValid ? customIndigoColor.withOpacity(0.5) : customGreyColor300),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -160,7 +160,7 @@ class _CreateChatViewGroupNameFormFieldState extends State<CreateChatViewGroupNa
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(color: errorColor.withValues(alpha: 0.7)),
+                      borderSide: BorderSide(color: errorColor.withOpacity(0.7)),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),

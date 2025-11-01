@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_chat/presentation/design_system/colors.dart';
-import 'package:flutter_social_chat/presentation/design_system/widgets/custom_text.dart';
+import 'package:billie/presentation/design_system/colors.dart';
+import 'package:billie/presentation/design_system/widgets/custom_text.dart';
 
 class AnimatedGradientButton extends StatelessWidget {
   const AnimatedGradientButton({
@@ -52,7 +52,7 @@ class AnimatedGradientButton extends StatelessWidget {
           final endColor = Color.lerp(buttonGradientInactiveEnd, buttonGradientActiveEnd, value)!;
 
           // Get shadow color with animated opacity
-          final shadowColor = customIndigoColor.withValues(alpha: 0.3 * value);
+          final shadowColor = customIndigoColor.withOpacity(0.3 * value);
 
           // Interpolate for circle background
           final circleColor = Color.lerp(whiteWithOpacity10, whiteWithOpacity30, value)!;
@@ -78,7 +78,6 @@ class AnimatedGradientButton extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CustomText(text: text.toUpperCase(), style: buttonTextStyle, color: white),
                     Container(
