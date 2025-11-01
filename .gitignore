@@ -179,3 +179,10 @@ firebase.json
 .env
 *.env
 !.env.example
+
+# APK files (except release APK)
+*.apk
+!app-release.apk
+
+# Java downloads
+*.tar.gz

@@ -21,7 +21,7 @@ void main() async {
 
   // Initialize hydrated storage for state persistence
   HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: HydratedStorageDirectory((await getApplicationDocumentsDirectory()).path),
+    storageDirectory: await getApplicationDocumentsDirectory(),
   );
 
   runApp(const AppWidget());

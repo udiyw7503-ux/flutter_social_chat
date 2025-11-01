@@ -40,7 +40,7 @@ class LandingContent extends StatelessWidget {
             width: size.width * 0.7,
             height: size.height * 0.3,
             fit: BoxFit.contain,
-            frameRate: const FrameRate(30), // Limit frame rate to improve performance
+            frameRate: FrameRate.max, // Use max frame rate for older version
           ),
           const SizedBox(height: 32),
           CustomText(

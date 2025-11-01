@@ -12,15 +12,15 @@ class ConnectivityCubit extends Cubit<ConnectivityState> {
     _initConnectivity();
   }
 
-  late final StreamSubscription<List<ConnectivityResult>> _connectivitySubscription;
+  late final StreamSubscription<ConnectivityResult> _connectivitySubscription;
   final Connectivity _connectivity = Connectivity();
 
   /// Initialize the connectivity monitoring
   Future<void> _initConnectivity() async {
     try {
       // Check initial connectivity
-      final initialResults = await _connectivity.checkConnectivity();
-      _onConnectivityChanged(initialResults);
+      final initialResult = await _connectivity.checkConnectivity();
+      _onConnectivityChanged(initialResult);
 
       // Setup listener for connectivity changes
       _connectivitySubscription = _connectivity.onConnectivityChanged.listen(_onConnectivityChanged);
@@ -31,8 +31,8 @@ class ConnectivityCubit extends Cubit<ConnectivityState> {
   }
 
   /// Handle connectivity change events
-  void _onConnectivityChanged(List<ConnectivityResult> results) {
-    final isConnected = results.any((result) => result != ConnectivityResult.none);
+  void _onConnectivityChanged(ConnectivityResult result) {
+    final isConnected = result != ConnectivityResult.none;
     emit(state.copyWith(isUserConnectedToTheInternet: isConnected));
   }
 

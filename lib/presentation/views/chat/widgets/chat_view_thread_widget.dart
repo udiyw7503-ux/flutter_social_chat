@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:billie/presentation/design_system/colors.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
 /// Thread page shown when a thread is opened

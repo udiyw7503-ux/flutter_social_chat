@@ -57,7 +57,7 @@ class PopScopeScaffold extends StatelessWidget {
 
     return PopScope(
       canPop: false,
-      onPopInvokedWithResult: onPopInvokedWithResult ?? (didPop, result) {},
+      onPopInvoked: onPopInvokedWithResult != null ? (didPop) => onPopInvokedWithResult!(didPop, null) : (didPop) {},
       child: Scaffold(
         primary: primary,
         bottomNavigationBar: bottomNavigationBar,

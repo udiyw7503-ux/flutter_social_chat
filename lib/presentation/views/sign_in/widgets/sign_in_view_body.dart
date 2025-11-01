@@ -31,7 +31,7 @@ class SignInViewBody extends StatelessWidget {
             Assets.animations.chatAnimation,
             width: size.width / 1.5,
             repeat: true,
-            frameRate: const FrameRate(30), // Limit frame rate for better performance
+            frameRate: FrameRate.max, // Use max frame rate for older version
             options: LottieOptions(
               enableMergePaths: true, // Enable path merging for better performance
             ),

@@ -49,7 +49,7 @@ class _OnboardingViewAnimationState extends State<OnboardingViewAnimation> with 
                 width: 180,
                 height: 180,
                 controller: _controller,
-                frameRate: const FrameRate(30), // Limit frame rate for better performance
+                frameRate: FrameRate.max, // Use max frame rate for older version
                 options: LottieOptions(enableMergePaths: true) // Improve performance by merging paths
                 ,
               ),

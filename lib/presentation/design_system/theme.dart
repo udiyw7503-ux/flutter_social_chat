@@ -57,7 +57,7 @@ class AppTheme {
       primary: customIndigoColor,
       secondary: customIndigoColorSecondary,
       surface: white,
-      surfaceContainerHighest: white,
+      surfaceVariant: white,
       onSurface: black,
       onSurfaceVariant: secondaryTextColor,
       error: errorColor,
@@ -90,18 +90,18 @@ class AppTheme {
   static ElevatedButtonThemeData _createElevatedButtonTheme() {
     return ElevatedButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: WidgetStateProperty.all(customIndigoColor),
-        foregroundColor: WidgetStateProperty.all(white),
-        elevation: WidgetStateProperty.all(0),
-        shape: WidgetStateProperty.all(
+        backgroundColor: MaterialStateProperty.all(customIndigoColor),
+        foregroundColor: MaterialStateProperty.all(white),
+        elevation: MaterialStateProperty.all(0),
+        shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24),
           ),
         ),
-        padding: WidgetStateProperty.all(
+        padding: MaterialStateProperty.all(
           const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
         ),
-        textStyle: WidgetStateProperty.all(
+        textStyle: MaterialStateProperty.all(
           _baseTextStyle.copyWith(
             fontSize: 16,
             fontWeight: FontWeight.w600,
@@ -117,19 +117,19 @@ class AppTheme {
   static TextButtonThemeData _createTextButtonTheme() {
     return TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: WidgetStateProperty.all(customIndigoColor),
-        textStyle: WidgetStateProperty.all(
+        foregroundColor: MaterialStateProperty.all(customIndigoColor),
+        textStyle: MaterialStateProperty.all(
           _baseTextStyle.copyWith(
             fontSize: 16,
             fontWeight: FontWeight.w500,
           ),
         ),
-        overlayColor: WidgetStateProperty.resolveWith<Color?>(
-          (Set<WidgetState> states) {
-            if (states.contains(WidgetState.hovered)) {
+        overlayColor: MaterialStateProperty.resolveWith<Color?>(
+          (Set<MaterialState> states) {
+            if (states.contains(MaterialState.hovered)) {
               return customIndigoColor.withOpacity(0.04);
             }
-            if (states.contains(WidgetState.focused) || states.contains(WidgetState.pressed)) {
+            if (states.contains(MaterialState.focused) || states.contains(MaterialState.pressed)) {
               return customIndigoColor.withOpacity(0.12);
             }
             return null;

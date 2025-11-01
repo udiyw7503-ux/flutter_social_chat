@@ -32,7 +32,7 @@ class ChatViewBody extends StatelessWidget {
             ),
           ),
         ),
-        StreamMessageInput(
+        const StreamMessageInput(
           autoCorrect: false,
         ),
       ],
